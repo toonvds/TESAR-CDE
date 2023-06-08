@@ -1,0 +1,51 @@
+epochs:
+  value: 1000
+  desc: "number training epochs (max)"
+patience:
+  value: 50
+  desc: "early stopping patience"
+output_channels:  # Not used
+  value: 59
+  desc: "output channels"
+hidden_channels_x:
+  value: 32
+  desc: "hidden channels x embedding for z(t_0)"
+hidden_channels_enc:
+  value: 8
+  desc: "hidden channels CDE encoder"
+hidden_layers_enc:
+  value: 3
+  desc: "hidden channels CDE encoder"
+hidden_channels_dec:
+  value: 8
+  desc: "hidden channels CDE decoder"
+hidden_layers_dec:
+  value: 2
+  desc: "hidden channels CDE decoder"
+hidden_channels_map:
+  value: 8
+  desc: "hidden channels final map"
+hidden_layers_map:
+  value: 1
+  desc: "hidden layers map (separate part only)"
+alpha:  # 0.8 good heuristic to scale losses
+  value: 0.8
+  desc: "objective function trade-off"
+cutoff:
+  value: 0.001
+  desc: "minimum probability to consider"
+use_time:           # Not used
+  value: False
+  desc: "use time"
+latent_projection_augment:
+  value: False
+  desc: "use latent projection to augment data vector"
+sample_proportion:
+  value: 1
+  desc: "proportion of dataset to sample"
+batch_size:
+  value: 128
+  desc: "batch size"
+window:
+  value: 7
+  desc: "window"
