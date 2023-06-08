@@ -42,8 +42,8 @@ python main.py
 [--data_path [path to experiment data if loading one from a location]]
 [--kappa [kappa parameter for the Hawkes process]]
 [--iterations [number of iterations for the experiment]]
-[--save_raw_datapath [path to save the raw dataset, so it can be reused and speed things up]]
-[--save_transformed_datapath [path to save the transformed dataset, so it can be reuse and speed things up]]
+[--save_raw_datapath [path to save the raw dataset, so it can be reused to speed things up]]
+[--save_transformed_datapath [path to save the transformed dataset, so it can be reused to speed things up]]
 ```
 Example usage to train TESAR-CDE (Multitask) for informativeness $\gamma=6$:
 
